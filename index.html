@@ -6,73 +6,114 @@
     <title>Зіпка Nike Tech Syna World Central Cee</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
+            font-family: 'serif';
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
             margin: 0;
             padding: 0;
         }
-        .container {
+        .header {
+            background-color: #1a1a1a;
             padding: 20px;
         }
-        .logo {
-            width: 150px;
+        .header h1 {
+            color: #ffcc00;
+            font-size: 2em;
         }
-        .product-image {
+        .product {
+            margin: 20px;
+            padding: 20px;
+            background-color: #333333;
+            border-radius: 10px;
+        }
+        .product img {
             width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
         }
-        .order-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #ff0000;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
+        .product h2 {
+            color: #ffcc00;
+            font-size: 1.5em;
         }
-        .order-button:hover {
-            background-color: #e60000;
+        .product .price {
+            text-decoration: line-through;
+            color: #ff0000;
+        }
+        .product .discount {
+            color: #00ff00;
         }
         .order-form {
-            margin-top: 40px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #333333;
+            border-radius: 10px;
         }
         .order-form iframe {
             width: 100%;
             height: 600px;
+            border: none;
+        }
+
+        /* Додамо стилі для мобільних пристроїв */
+        @media (max-width: 600px) {
+            .header {
+                padding: 10px;
+            }
+            .header h1 {
+                font-size: 1.5em;
+            }
+            .product {
+                margin: 10px;
+                padding: 10px;
+            }
+            .product h2 {
+                font-size: 1.2em;
+            }
+            .order-form iframe {
+                height: 500px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="photo1.jpg" alt="Logo" class="logo">
+    <div class="header">
         <h1>Зіпка Nike Tech Syna World Central Cee</h1>
-        <img src="product1.jpg" alt="Product 1" class="product-image">
-        <p>АКЦІЯ 1830 грн (2990 грн) - Залишилося тільки 4 одиниці</p>
+    </div>
+    <div class="product">
+        <img src="photo1.jpg" alt="Logo" class="logo">
+        <img src="product1.jpg" alt="Product 1">
+        <h2>Зіпка Nike Tech Syna World Central Cee</h2>
+        <p class="price">2000 грн</p>
+        <p class="discount">АКЦІЯ 1830 грн</p>
+        <p>Залишилося: 4 шт.</p>
+        <p><strong>Його особливості:</strong></p>
         <ul>
             <li>Приємна на дотик</li>
-            <li>Тягнеться</li>
+            <li>Тягнется</li>
             <li>Оригінальні бірки</li>
             <li>Присутнє упакування</li>
-            <li>Доступні розміри: S, M, L</li>
         </ul>
+        <p><strong>Доступні розміри:</strong> S, M, L</p>
+        <p><strong>S:</strong> довжина 66, окружність грудей 104, ширина плечей 46</p>
+        <p><strong>M:</strong> довжина 68, окружність грудей 108, ширина плечей</p>
+        <p><strong>L:</strong> довжина 70, окружність грудей 112, ширина плечей 50</p>
         <a href="#order-form" class="order-button">ЗАМОВИТИ</a>
-        <div>
-            <p>Зіпка Nike Tech Syna World Central Cee - це стильний та зручний одяг для будь-якої погоди. Виготовлена з високоякісних матеріалів, вона забезпечує комфорт та довговічність.</p>
-            <img src="product2.jpg" alt="Product 2" class="product-image">
-            <p>Ця зіпка має сучасний дизайн та підходить для будь-якого стилю. Вона ідеально підходить для активного відпочинку та повсякденного носіння.</p>
-            <img src="product3.jpg" alt="Product 3" class="product-image">
-            <p>Завдяки своїй універсальності, зіпка Nike Tech Syna World Central Cee стане незамінною частиною вашого гардеробу. Вона легко поєднується з іншими елементами одягу.</p>
-            <img src="product4.jpg" alt="Product 4" class="product-image">
-            <p>Цей продукт доступний в обмеженій кількості, тому не втрачайте можливість придбати його за акційною ціною. Замовляйте зараз і насолоджуйтесь комфортом та стилем.</p>
-            <img src="product5.jpg" alt="Product 5" class="product-image">
-            <p>Зіпка Nike Tech Syna World Central Cee - це вибір тих, хто цінує якість та стиль. Не пропустіть шанс стати власником цього унікального продукту.</p>
-            <img src="product6.jpg" alt="Product 6" class="product-image">
-        </div>
-        <div class="order-form" id="order-form">
-            <h2>Оформити замовлення</h2>
-            <p>Вас зателефонують, щоб підтвердити замовлення та узгодити доставку.</p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8iRSLowG3RisWTpImYLXmx0EWIhZzQy-nb6eRp_ns4MPSWg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
+        <p>Зіпка Nike Tech Syna World Central Cee - це стильний та зручний одяг для будь-якої погоди. Виготовлена з високоякісних матеріалів, вона забезпечує комфорт та довговічність.</p>
+        <img src="product2.jpg" alt="Product 2">
+        <p>Ця зіпка має сучасний дизайн та підходить для будь-якого стилю. Вона ідеально підходить для активного відпочинку та повсякденного носіння.</p>
+        <img src="product3.jpg" alt="Product 3">
+        <p>Завдяки своїй універсальності, зіпка Nike Tech Syna World Central Cee стане незамінною частиною вашого гардеробу. Вона легко поєднується з іншими елементами одягу.</p>
+        <img src="product4.jpg" alt="Product 4">
+        <p>Цей продукт доступний в обмеженій кількості, тому не втрачайте можливість придбати його за акційною ціною. Замовляйте зараз і насолоджуйтесь комфортом та стилем.</p>
+        <img src="product5.jpg" alt="Product 5">
+        <p>Зіпка Nike Tech Syna World Central Cee - це вибір тих, хто цінує якість та стиль. Не пропустіть шанс стати власником цього унікального продукту.</p>
+        <img src="product6.jpg" alt="Product 6">
+    </div>
+    <div class="order-form" id="order-form">
+        <h2>Оформити замовлення</h2>
+        <p>Вас зателефонують, щоб підтвердити замовлення та узгодити доставку.</p>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8iRSLowG3RisWTpImYLXmx0EWIhZzQy-nb6eRp_ns4MPSWg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
 </body>
 </html>
